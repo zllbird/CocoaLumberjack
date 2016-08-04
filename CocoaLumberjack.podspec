@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name     = 'CocoaLumberjack'
-  s.version  = '2.2.0'
+  s.version  = '2.3.0'
   s.license  = 'BSD'
   s.summary  = 'A fast & simple, yet powerful & flexible logging framework for Mac and iOS.'
   s.homepage = 'https://github.com/CocoaLumberjack/CocoaLumberjack'
@@ -22,10 +22,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
-  
-  s.public_header_files = 'Classes/*.h'
-  
-  s.module_map = 'Framework/Lumberjack/CocoaLumberjack.modulemap'
+
   s.default_subspecs = 'Default', 'Extensions'
 
   s.subspec 'Default' do |ss|
